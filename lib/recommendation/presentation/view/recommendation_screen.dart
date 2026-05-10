@@ -1,39 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_campus_coffee/recommendation/presentation/mvvm/recommendation_view_model.dart';
 
-class RecommendationScreen extends StatefulWidget {
+class RecommendationScreen extends StatelessWidget {
   const RecommendationScreen({super.key});
 
   @override
-  State<RecommendationScreen> createState() => _RecommendationScreenState();
-}
-
-class _RecommendationScreenState extends State<RecommendationScreen> {
-  late final RecommendationViewModel recommendationViewModel;
-
-  @override
-  void initState() {
-    super.initState();
-    recommendationViewModel = RecommendationViewModel();
-    recommendationViewModel.fetchRecommendations();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return ListenableBuilder(
-      listenable: recommendationViewModel,
-      builder: (context, child) {
-        if (recommendationViewModel.loading) {
-          return const Center(child: CircularProgressIndicator());
-        }
-        return ListView.builder(
-          itemCount: recommendationViewModel.recommendations.length,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("K-Pop Mağazası"),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 0.75,
+            crossAxisSpacing: 16,
+            mainAxisSpacing: 16,
+          ),
+          itemCount: 4,
           itemBuilder: (context, index) {
-            final recommendation = recommendationViewModel.recommendations[index];
-            return ListTile(title: Text(recommendation.answer ?? ''));
+            return Card(
+              color: Colors.white,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.star, color: Color(0xFFA85568), size: 40),
+                  SizedBox(height: 10),
+                  Text("Ürün Gelecek", style: TextStyle(fontWeight: FontWeight.bold)),
+                ],
+              ),
+            );
           },
-        );
-      },
+        ),
+      ),
     );
   }
 }
