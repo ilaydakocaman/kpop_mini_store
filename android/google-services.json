@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405181107930",
+    "project_id": "kpopstoreproject",
+    "storage_bucket": "kpopstoreproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405181107930:android:80101aa3860931d46c1fe3",
+        "android_client_info": {
+          "package_name": "com.kpopstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJQ1g0nRNbJjCFfYYidoxQVYnInDk50Hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
