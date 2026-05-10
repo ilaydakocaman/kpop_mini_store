@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'presentation/view/recommendation_screen.dart'; // Import yolu düzeltildi
+import 'branches/presentation/view/branches_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -24,8 +24,7 @@ class App extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      // Const hatasını önlemek için başındaki const'u kaldırdık
-      home: RecommendationScreen(),
+      home: BranchesScreen(),
     );
   }
 }

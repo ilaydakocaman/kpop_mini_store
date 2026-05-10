@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_campus_coffee/app.dart';
+import 'app.dart';
 
 void main() {
   runApp(const App());

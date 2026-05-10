@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_campus_coffee/branches/presentation/view/branches_screen.dart';
-import 'package:gdg_campus_coffee/market/presentation/view/market_screen.dart';
-import 'package:gdg_campus_coffee/menu/presentation/view/menu_screen.dart';
-import 'package:gdg_campus_coffee/recommendation/presentation/view/recommendation_screen.dart';
+import 'package:kpop_mini_store/branches/presentation/view/branches_screen.dart';
+import 'package:kpop_mini_store/market/presentation/view/market_screen.dart';
+import 'package:kpop_mini_store/menu/presentation/view/menu_screen.dart';
+import 'package:kpop_mini_store/recommendation/presentation/view/recommendation_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

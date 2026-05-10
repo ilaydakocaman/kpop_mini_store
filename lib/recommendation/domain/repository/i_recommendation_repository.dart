@@ -1,4 +1,4 @@
-import 'package:gdg_campus_coffee/recommendation/domain/entity/recommendation.dart';
+import 'package:kpop_mini_store/recommendation/domain/entity/recommendation.dart';
 
 abstract class IRecommendationRepository {
   Future<List<Recommendation>> getRecommendations();

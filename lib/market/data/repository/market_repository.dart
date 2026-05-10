@@ -1,6 +1,6 @@
-import 'package:gdg_campus_coffee/market/data/model/catalog_product_model.dart';
-import 'package:gdg_campus_coffee/market/domain/entity/catalog_product.dart';
-import 'package:gdg_campus_coffee/market/domain/repository/i_market_repository.dart';
+import 'package:kpop_mini_store/market/data/model/catalog_product_model.dart';
+import 'package:kpop_mini_store/market/domain/entity/catalog_product.dart';
+import 'package:kpop_mini_store/market/domain/repository/i_market_repository.dart';
 
 class MarketRepository implements IMarketRepository {
   @override

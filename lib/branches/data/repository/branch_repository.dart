@@ -1,6 +1,6 @@
-import 'package:gdg_campus_coffee/branches/data/model/branch_model.dart';
-import 'package:gdg_campus_coffee/branches/domain/entity/branch.dart';
-import 'package:gdg_campus_coffee/branches/domain/repository/i_branch_repository.dart';
+import 'package:kpop_mini_store/branches/data/model/branch_model.dart';
+import 'package:kpop_mini_store/branches/domain/entity/branch.dart';
+import 'package:kpop_mini_store/branches/domain/repository/i_branch_repository.dart';
 
 class BranchRepository implements IBranchRepository {
   @override

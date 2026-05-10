@@ -1,5 +1,5 @@
-import 'package:gdg_campus_coffee/menu/data/repository/product_repository.dart';
-import 'package:gdg_campus_coffee/menu/domain/entity/product.dart';
+import 'package:kpop_mini_store/menu/data/repository/product_repository.dart';
+import 'package:kpop_mini_store/menu/domain/entity/product.dart';
 
 class GetProductsUseCase {
   final _productRepository = ProductRepository();
